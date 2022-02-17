@@ -1,8 +1,13 @@
 import React from "react";
 
-function Search() {
+function Search(props) {
     return (
+      <div>
       <input placeholder="What did you eat today?" />
+      <button onClick={props.onClick}>
+            Submit
+        </button>
+      </div>
     );
   }
   
