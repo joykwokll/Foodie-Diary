@@ -12,11 +12,11 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path = "/" element = {<App />} >
-        <Route path = "/" element = {<Home />} />
+        <Route index element = {<Home />} />
         <Route path = "Calories_Tracker" element = {<CaloriesTracker />} />
         <Route path = "Recipes" element = {<Recipes />} />
       </Route>
-      </Routes>
+    </Routes>
   </BrowserRouter>,
  
   document.getElementById('root')
