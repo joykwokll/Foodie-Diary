@@ -4,12 +4,15 @@ import axios from 'axios';
 
 function CaloriesTracker() {
 
+    
+
     const callApi = () => {
         axios.get('https://api.calorieninjas.com/v1/nutrition?query=tomato',
           {headers: {'X-Api-key': 'KGzjcXBdiMCn4WkwQhNjEQ==Z7CtmY77tn1sbJTg'}}
         ).then(function (response) {
           // handle success
-          console.log(response);
+          console.log(response.data.items[0]);
+          console.log(response.data.items[0].calories);
         })
         .catch(function (error) {
           // handle error

@@ -5,6 +5,10 @@ import Result from './Routes/Components/Result';
 
 function App() {
 
+  // const [form, setForm] = useState([" "]);
+  
+
+
 
   return (
     <div className="App">
