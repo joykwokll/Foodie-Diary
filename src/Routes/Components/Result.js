@@ -1,10 +1,15 @@
 import React from "react";
+import { findDOMNode } from "react-dom";
 
-const Result = () => {
+const Result = (props) => {
+    // console.log(props)
     return (
-       <div>
-           <img src/>
-       </div>
+        <div>
+            <p>{props.food.name}: {props.food.calories}kcal </p>
+            <button onClick={props.onRemove}>
+                Remove
+            </button>
+        </div>
     )
 };
 
