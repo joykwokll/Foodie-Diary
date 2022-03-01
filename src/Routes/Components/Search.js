@@ -3,7 +3,7 @@ import React from "react";
 function Search(props) {
     return (
       <div>
-      <input placeholder="What did you eat today?" />
+      <input placeholder="What did you eat today?" value={props.keyword} onChange={props.onChange}/>
       <button onClick={props.onClick}>
             Submit
         </button>
