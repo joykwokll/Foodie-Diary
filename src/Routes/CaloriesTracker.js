@@ -64,6 +64,9 @@ function CaloriesTracker() {
 
   return (
     <div>
+      <h1>Count your calories count per meal. 
+        <br/> Keep track of your daily intake!</h1>
+
       <Search keyword={keyword} onChange={changeHandler} onClick={clickHandler} onKeyDown={onKeyDownHandler} />
 
       {food.map((data, index) => {

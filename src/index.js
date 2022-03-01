@@ -7,6 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './Routes/Home';
 import CaloriesTracker from './Routes/CaloriesTracker';
 import Recipes from './Routes/Recipes';
+import Forum from './Routes/Forum';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Route index element = {<Home />} />
         <Route path = "Calories_Tracker" element = {<CaloriesTracker />} />
         <Route path = "Recipes" element = {<Recipes />} />
+        <Route path = "Forum" element = {<Forum />} />
       </Route>
     </Routes>
   </BrowserRouter>,
