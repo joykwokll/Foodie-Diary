@@ -40,8 +40,10 @@ function CaloriesTracker() {
 
   const removeFood = (index) => {
     const foodCopy = [...food];
-    foodCopy.splice(index, 1)
+    const removedFood = foodCopy.splice(index, 1)
     setFood(foodCopy)
+    console.log(removedFood, "removed")
+    setTotalCalories(totalCalories - removedFood[0].calories);
     // console.log(index)
   }
 
