@@ -59,6 +59,7 @@ function CaloriesTracker() {
   const onKeyDownHandler = (e) => {
     if (e.key === "Enter") {
       callApi();
+      setKeyword(" ");
     }
   }
 
