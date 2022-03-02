@@ -1,7 +1,7 @@
 .AppBG {
   text-align: center;
   margin: auto;
-  background-image: url("/Users/joyjoy/Documents/GitHub/Foodie-Diary/images/foodimage.jpeg");
+  background-image: url("./images/foodimage.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
