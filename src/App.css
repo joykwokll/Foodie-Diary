@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: auto;
 }
 
 .Links {
@@ -8,9 +9,13 @@
   padding: 15px;
 }
 
-.bg {
-  background-image: url("./images/foodimage.jpeg");
-
+.Login {
+  background-color: pink;
+  text-align: right;
+  padding: 15px;
+  position: absolute;
+  top: 0px;
+  right: 0;
 }
 
 .App-logo {
