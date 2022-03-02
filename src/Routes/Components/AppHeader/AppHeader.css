@@ -1,0 +1,14 @@
+.Links {
+    background-color: pink;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  .Login {
+    background-color: pink;
+    text-align: right;
+    padding: 15px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
