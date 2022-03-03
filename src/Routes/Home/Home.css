@@ -19,12 +19,77 @@
       font-family: 'Acme', sans-serif;
       font-stretch: condensed;
       font-size: 80px;
-      font-colour: white;
+      color: black;
+      border-color: white;
+      border-radius: 10px;
       letter-spacing: 2px;
       position: relative;
       height: 0px;
-      top: 180px;
-      
+      top: 120px;
 
     }
-  
+
+    .h2first {
+        margin-block-start: 0.00em;
+        margin-block-end: 0.00em;
+        font-family: 'Acme', sans-serif;
+        font-stretch: condensed;
+        font-size: 50px;
+        color: black;
+        border-color: white;
+        border-radius: 10px;
+        letter-spacing: 2px;
+        position: relative;
+        height: 0px;
+        top: 260px;
+    }
+
+    .h2sec {
+        margin-block-start: 0.00em;
+        margin-block-end: 0.00em;
+        font-family: 'Acme', sans-serif;
+        font-stretch: condensed;
+        font-size: 50px;
+        color: black;
+        border-color: white;
+        border-radius: 10px;
+        letter-spacing: 2px;
+        position: relative;
+        height: 0px;
+        top: 340px;
+    }
+
+    .h2third {
+        margin-block-start: 0.00em;
+        margin-block-end: 0.00em;
+        font-family: 'Acme', sans-serif;
+        font-stretch: condensed;
+        font-size: 50px;
+        color: black;
+        border-color: white;
+        border-radius: 10px;
+        letter-spacing: 2px;
+        position: relative;
+        height: 0px;
+        top: 420px;
+    }
+
+    .button {
+        border-radius: 50px;
+        font-family: 'Acme', sans-serif;
+        font-stretch: condensed;
+        position: relative;
+        top: 550px;
+        background-color: black;
+        border: none;
+        color: pink;
+        padding: 26px 58px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 28px;
+      }
+
+      .button:hover {
+        background-color:#002ead;
+        transition: 0.7s;
+    }
