@@ -1,0 +1,25 @@
+.Recipesbg {
+    text-align: center;
+    background-image: url("./RecipesBG.jpeg"); 
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    Height: 900px;
+    border-color: pink;
+    position: absolute;
+    top: 62px;
+    transform: rotate(180deg);
+}
+
+.Recipes { 
+    font-family: 'Acme', sans-serif;
+    font-stretch: condensed;
+    font-size: 20px;
+    color: black;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50px;
+    z-index: 1;
+}
