@@ -16,7 +16,7 @@
       margin-block-end: 0.00em;
       font-family: 'Acme', sans-serif;
       font-stretch: condensed;
-      font-size: 80px;
+      font-size: 60px;
       color: black;
       border-color: white;
       border-radius: 10px;
@@ -32,7 +32,7 @@
         margin-block-end: 0.00em;
         font-family: 'Acme', sans-serif;
         font-stretch: condensed;
-        font-size: 50px;
+        font-size: 26px;
         color: black;
         border-color: white;
         border-radius: 10px;
@@ -40,6 +40,7 @@
         position: relative;
         height: 0px;
         top: 260px;
+        right: 375px;
     }
 
     .h2sec {
@@ -47,14 +48,15 @@
         margin-block-end: 0.00em;
         font-family: 'Acme', sans-serif;
         font-stretch: condensed;
-        font-size: 50px;
+        font-size: 26px;
         color: black;
         border-color: white;
         border-radius: 10px;
         letter-spacing: 2px;
         position: relative;
         height: 0px;
-        top: 340px;
+        top: 260px;
+        right: 30px;
     }
 
     .h2third {
@@ -62,14 +64,15 @@
         margin-block-end: 0.00em;
         font-family: 'Acme', sans-serif;
         font-stretch: condensed;
-        font-size: 50px;
+        font-size: 26px;
         color: black;
         border-color: white;
         border-radius: 10px;
         letter-spacing: 2px;
         position: relative;
         height: 0px;
-        top: 420px;
+        top: 260px;
+        right: -345px;
     }
 
     .button {
@@ -77,17 +80,17 @@
         font-family: 'Acme', sans-serif;
         font-stretch: condensed;
         position: relative;
-        top: 550px;
+        top: 365px;
         background-color: black;
         border: none;
         color: pink;
-        padding: 26px 58px;
+        padding: 18px 38px;
         text-align: center;
         text-decoration: none;
-        font-size: 28px;
+        font-size: 26px;
       }
 
       .button:hover {
-        background-color:#002ead;
+        background-color:#ff84d0;
         transition: 0.7s;
     }
