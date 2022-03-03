@@ -65,7 +65,8 @@ function CaloriesTracker() {
   };
 
   return (
-    <div className="bg">
+    <div >
+      <div className="Caloriesbg"> </div>
       <div className="Calories">
         <h1>
           Count your calories count per meal.

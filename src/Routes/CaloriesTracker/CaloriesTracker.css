@@ -1,13 +1,15 @@
-.bg {
+.Caloriesbg {
     text-align: center;
-    /* background-image: url("./images/foodimage.jpeg");  */
+    background-image: url("./CaloriesTrackerBG.jpg"); 
+    opacity: 0.5;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     Height: 900px;
     border-color: pink;
-    border-top: 10px;
+    position: absolute;
+    top: 62px;
 }
 
 .Calories { 
@@ -19,4 +21,9 @@
     border-radius: 10px;
     letter-spacing: 2px;
     position: relative;
+    top: 50px;
+}
+
+.Count {
+    z-index: 1;
 }

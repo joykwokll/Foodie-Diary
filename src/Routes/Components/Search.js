@@ -3,9 +3,9 @@ import React from "react";
 function Search(props) {
     return (
       <div>
-      <input placeholder="What did you eat today?" value={props.keyword} onChange={props.onChange} onKeyDown={props.onKeyDown}/>
+      <input value={props.keyword} onChange={props.onChange} onKeyDown={props.onKeyDown} placeholder="What did you eat today?"/>
       <button onClick={props.onClick}>
-            Submit
+            Enter
         </button>
       </div>
     );
