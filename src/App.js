@@ -7,7 +7,7 @@ function App() {
   // const [form, setForm] = useState([" "]);
   return (
     // <div style={{ backgroundImage: "url(/images/foodimage.jpeg)" }}>
-    <div className="AppBG">
+    <div className="App">
       <AppHeader/>
     </div>
     

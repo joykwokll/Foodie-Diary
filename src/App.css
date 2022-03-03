@@ -1,13 +1,6 @@
-.AppBG {
+.App{
   text-align: center;
   margin: auto;
-  /* background-image: url("./images/foodimage.jpeg"); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 1800px;
-  Height: 850px;
-
 }
 
 .App-logo {

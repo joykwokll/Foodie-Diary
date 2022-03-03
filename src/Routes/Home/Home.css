@@ -1,0 +1,30 @@
+.HomeBG {
+    text-align: center;
+    margin: auto;
+    background-image: url("./images/foodimage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1900px;
+    Height: 900px;
+    border-color: pink;
+    border-top: 10px;
+    opacity: 0.3;
+  
+  }
+
+  .Welcome {
+      margin-block-start: 0.00em;
+      margin-block-end: 0.00em;
+      font-family: 'Acme', sans-serif;
+      font-stretch: condensed;
+      font-size: 80px;
+      font-colour: white;
+      letter-spacing: 2px;
+      position: relative;
+      height: 0px;
+      top: 180px;
+      
+
+    }
+  
