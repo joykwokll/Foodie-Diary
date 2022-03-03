@@ -17,7 +17,7 @@ const AppHeader = () => {
                     <Link to="/Register">Register</Link>
                 </div>
             </div>
-            <div className="bg">
+            <div>
                 <Outlet />
             </div>
             <style>

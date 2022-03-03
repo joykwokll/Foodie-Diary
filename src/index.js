@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './Routes/Home/Home';
-import CaloriesTracker from './Routes/CaloriesTracker';
+import CaloriesTracker from './Routes/CaloriesTracker/CaloriesTracker';
 import Recipes from './Routes/Recipes';
 import Forum from './Routes/Forum';
 import Login from './Routes/Login'
