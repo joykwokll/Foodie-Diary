@@ -7,7 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './Routes/Home/Home';
 import CaloriesTracker from './Routes/CaloriesTracker/CaloriesTracker';
 import Recipes from './Routes/Recipes';
-import Forum from './Routes/Forum';
+import Forum from './Routes/Forum/Forum';
 import Login from './Routes/Login'
 import Register from './Routes/Register'
 

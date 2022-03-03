@@ -1,0 +1,26 @@
+.Forumbg {
+    text-align: center;
+    background-image: url("./ForumBG.jpg"); 
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    Height: 900px;
+    border-color: pink;
+    position: absolute;
+    top: 62px;
+}
+
+.Forum { 
+    font-family: 'Acme', sans-serif;
+    font-stretch: condensed;
+    font-size: 20px;
+    color: black;
+    border-color: white;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50px;
+    z-index: 1;
+}
