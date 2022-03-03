@@ -2,6 +2,10 @@
     background-color: pink;
     text-align: left;
     padding: 15px;
+    font-family: 'Acme', sans-serif;
+    font-stretch: condensed;
+    font-size: 25px;
+    letter-spacing: 3px;
   }
   
   .Login {
@@ -11,4 +15,8 @@
     position: absolute;
     top: 0px;
     right: 0;
+    font-family: 'Acme', sans-serif;
+    font-stretch: condensed;
+    font-size: 25px;
+    letter-spacing: 3px;
   }

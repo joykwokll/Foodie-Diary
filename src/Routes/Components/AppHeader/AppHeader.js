@@ -20,6 +20,9 @@ const AppHeader = () => {
             <div className="bg">
                 <Outlet />
             </div>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Acme&family=Londrina+Solid:wght@300;400&display=swap');
+            </style>
         </div>
     )
 };
