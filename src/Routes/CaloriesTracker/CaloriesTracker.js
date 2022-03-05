@@ -27,7 +27,9 @@ function CaloriesTracker() {
             ...food,
             { name: keyword, calories: response.data.items[0].calories },
           ]);
-          setTotalCalories(Math.ceil(totalCalories) + response.data.items[0].calories);
+          setTotalCalories(
+            Math.ceil(totalCalories) + response.data.items[0].calories
+          );
           // console.log(response.data.items[0].calories);
           console.log(response.data.items[0]);
         } else {
@@ -66,7 +68,7 @@ function CaloriesTracker() {
   };
 
   return (
-    <div >
+    <div>
       <div className="Caloriesbg"> </div>
       <div className="Calories">
         <h1>
@@ -84,6 +86,33 @@ function CaloriesTracker() {
         {food.map((data, index) => {
           return <Result food={data} onRemove={() => removeFood(index)} />;
         })}
+  
+
+        <table>
+          <thead>
+            <tr>
+              <th>Food Name</th>
+              <th>Calories</th>
+              <th>Calories</th>
+            </tr>
+          </thead>
+          <tbody>
+            {food.map((x) => (
+              <tr>
+                <td>{x.name}</td>
+                <td>{x.calories}</td>
+              </tr>
+            ))}
+            {/* <tr>
+              <td>{food[0]?.name}</td>
+              <td>{food[0]?.calories}</td>
+            </tr>
+            <tr>
+              <td>{food[1]?.name}</td>
+              <td>{food[1]?.calories}</td>
+            </tr> */}
+          </tbody>
+        </table>
 
         <p>Total Calories: {totalCalories}kcal </p>
 
