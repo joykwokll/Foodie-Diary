@@ -1,6 +1,7 @@
 .Links {
     background-color: pink;
     text-align: left;
+    color: aliceblue;
     padding: 15px;
     font-family: 'Acme', sans-serif;
     font-stretch: condensed;
@@ -10,6 +11,7 @@
   
   .Login {
     background-color: pink;
+    color: aliceblue;
     text-align: right;
     padding: 15px;
     position: absolute;

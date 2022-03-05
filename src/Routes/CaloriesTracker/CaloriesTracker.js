@@ -27,8 +27,9 @@ function CaloriesTracker() {
             ...food,
             { name: keyword, calories: response.data.items[0].calories },
           ]);
-          setTotalCalories(totalCalories + response.data.items[0].calories);
+          setTotalCalories(Math.ceil(totalCalories) + response.data.items[0].calories);
           // console.log(response.data.items[0].calories);
+          console.log(response.data.items[0]);
         } else {
           setError(true);
         }
