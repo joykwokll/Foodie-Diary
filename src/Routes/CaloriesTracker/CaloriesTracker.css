@@ -1,7 +1,7 @@
 .Caloriesbg {
     text-align: center;
     background-image: url("./CaloriesTrackerBG.jpg"); 
-    opacity: 0.5;
+    opacity: 0.4;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -48,6 +48,12 @@ tfoot {
 
 th {
     padding: 10px;
+}
+
+p {
+
+    margin-top : 25px;
+    margin-bottom: -10px
 }
 
 
