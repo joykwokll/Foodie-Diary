@@ -28,13 +28,26 @@
     z-index: 1;
 }
 
+.caloriesTable {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
 table,
 td {
-    border: 1px solid #333;
+    border: 2px solid white;
 }
 
 thead,
 tfoot {
-    background-color: #333;
-    color: #fff;
+    background-color: pink;
+    color: black;
+
+    
 }
+
+th {
+    letter-spacing: 3px;
+}
+
+

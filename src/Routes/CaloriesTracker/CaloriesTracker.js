@@ -6,7 +6,7 @@ import "./CaloriesTracker.css";
 
 function CaloriesTracker() {
   const [food, setFood] = useState([]);
-  const [keyword, setKeyword] = useState(" ");
+  const [keyword, setKeyword] = useState("");
   const [totalCalories, setTotalCalories] = useState(0);
   const [error, setError] = useState(false);
 
@@ -25,7 +25,15 @@ function CaloriesTracker() {
           setError(false);
           setFood([
             ...food,
-            { name: keyword, calories: response.data.items[0].calories },
+            {
+              name: keyword,
+              calories: response.data.items[0].calories,
+              serving_size_g: response.data.items[0].serving_size_g,
+              sugar_g: response.data.items[0].sugar_g,
+              sodium_mg: response.data.items[0].sodium_mg,
+              protein_g: response.data.items[0].protein_g,
+              carbohydrates_total_g: response.data.items[0].carbohydrates_total_g,
+            },
           ]);
           setTotalCalories(
             Math.ceil(totalCalories) + response.data.items[0].calories
@@ -83,17 +91,21 @@ function CaloriesTracker() {
           onKeyDown={onKeyDownHandler}
         />
 
-        {food.map((data, index) => {
+        {/* {food.map((data, index) => {
           return <Result food={data} onRemove={() => removeFood(index)} />;
         })}
-  
+   */}
 
-        <table>
+        <table className="caloriesTable">
           <thead>
             <tr>
-              <th>Food Name</th>
+              <th>Food Name</th>  
               <th>Calories</th>
-              <th>Calories</th>
+              <th>Serving Size</th>
+              <th>Sugar</th>
+              <th>Sodium</th>
+              <th>Protein</th>
+              <th>Carbohydrates</th>
             </tr>
           </thead>
           <tbody>
@@ -101,6 +113,11 @@ function CaloriesTracker() {
               <tr>
                 <td>{x.name}</td>
                 <td>{x.calories}</td>
+                <td>{x.serving_size_g}</td>
+                <td>{x.sugar_g}</td>
+                <td>{x.sodium_mg}</td>
+                <td>{x.protein_g}</td>
+                <td>{x.carbohydrates_total_g}</td>
               </tr>
             ))}
             {/* <tr>
