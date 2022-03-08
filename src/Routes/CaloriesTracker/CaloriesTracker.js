@@ -71,7 +71,13 @@ function CaloriesTracker() {
     const removedFood = foodCopy.splice(index, 1);
     setFood(foodCopy);
     console.log(removedFood, "removed");
-    setTotalCalories(totalCalories - removedFood[0].calories);
+    setTotalCalories(Math.ceil(totalCalories) - Math.ceil(removedFood[0].calories));
+    setTotalSugar(Math.ceil(totalSugar) - Math.ceil(removedFood[0].sugar_g));
+    setTotalSodium(Math.ceil(totalSodium) - Math.ceil(removedFood[0].sodium_mg));
+    setTotalProtein(Math.ceil(totalProtein) - Math.ceil(removedFood[0].protein_g));
+    setTotalCarbohydrates(Math.ceil(totalCarbohydrates) - Math.ceil(removedFood[0].carbohydrates_total_g));
+
+    
     // console.log(index)
   };
 
@@ -141,7 +147,7 @@ function CaloriesTracker() {
                 <td>{x.sodium_mg}</td>
                 <td>{x.protein_g}</td>
                 <td>{x.carbohydrates_total_g}</td>
-                {/* <td>{removedFood}</td> */}
+                <td><button onClick={() => removeFood(x)} /></td>
               </tr>
             ))}
             {/* <tr>
