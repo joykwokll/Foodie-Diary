@@ -24,7 +24,7 @@ function Recipes() {
 
   
   const callApi = () => (
-    axios.get(`https://tasty.p.rapidapi.com/recipes/auto-complete`),
+    axios.get(`https://tasty.p.rapidapi.com/recipes/auto-complete`,
       { params: { prefix: "chicken soup" } },
       {
         headers: {
@@ -32,7 +32,7 @@ function Recipes() {
           "x-rapidapi-key":
             "71f6e49fd5mshd91e5d645cbefadp169eedjsn1e321adce08f",
         },
-      }
+      })
         .then(function (response) {
           // handle success
           console.log(response.data.data);

@@ -1,6 +1,6 @@
 .Recipesbg {
     text-align: center;
-    /* background-image: url("./RecipesBG.jpeg");  */
+    background-image: url("./RecipesBG.jpeg"); 
     opacity: 0.5;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,6 +11,7 @@
     position: absolute;
     top: 62px;
     transform: rotate(180deg);
+    z-index: -5;
 }
 
 .Recipes { 
