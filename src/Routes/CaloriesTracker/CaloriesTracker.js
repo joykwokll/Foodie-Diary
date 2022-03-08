@@ -147,7 +147,7 @@ function CaloriesTracker() {
                 <td>{x.sodium_mg}</td>
                 <td>{x.protein_g}</td>
                 <td>{x.carbohydrates_total_g}</td>
-                <td><button onClick={() => removeFood(x)} /></td>
+                <td><button className="removeButton" onClick={() => removeFood(x)}>Remove</button></td>
               </tr>
             ))}
             {/* <tr>

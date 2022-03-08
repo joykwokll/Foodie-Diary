@@ -1,59 +1,68 @@
 .Caloriesbg {
-    text-align: center;
-    background-image: url("./CaloriesTrackerBG.jpg"); 
-    opacity: 0.4;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    Height: 900px;
-    border-color: pink;
-    position: absolute;
-    top: 62px;
+  text-align: center;
+  background-image: url("./CaloriesTrackerBG.jpg");
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 900px;
+  border-color: pink;
+  position: absolute;
+  top: 62px;
 }
 
-.Calories { 
-    font-family: 'Acme', sans-serif;
-    font-stretch: condensed;
-    font-size: 20px;
-    color: black;
-    border-color: white;
-    border-radius: 10px;
-    letter-spacing: 2px;
-    position: relative;
-    top: 50px;
+.Calories {
+  font-family: "Acme", sans-serif;
+  font-stretch: condensed;
+  font-size: 20px;
+  color: black;
+  border-color: white;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  position: relative;
+  top: 50px;
 }
 
 .Count {
-    z-index: 1;
+  z-index: 1;
 }
 
 .caloriesTable {
-    margin: 0 auto;
-    margin-top: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.removeButton {
+  font-family: "Acme", sans-serif;
+  font-stretch: condensed;
+  background-color: pink;
+  border-radius: 10px; /* Green */
+  border: 5px;
+  color: black;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
 }
 
 table,
 td {
-    border: 2px solid white;
+  border: 2px solid white;
 }
 
 thead,
 tfoot {
-    background-color: pink;
-    color: black;
-
-    
+  background-color: pink;
+  color: black;
 }
 
 th {
-    padding: 10px;
+  padding: 10px;
 }
 
 p {
-
-    margin-top : 25px;
-    margin-bottom: -10px
+  margin-top: 25px;
+  margin-bottom: -10px;
 }
-
-
