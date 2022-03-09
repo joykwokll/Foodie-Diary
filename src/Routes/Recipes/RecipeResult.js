@@ -1,11 +1,13 @@
 import React from "react";
 import "./RecipeResult.css";
 
-const RecipeResult = () => {
+const RecipeResult = (props) => {
     // console.log(props)
     return (
         <div className = "recipeContainer">
-            Test
+            <p>{props.results}</p>
+            <img src={props.response.data.results[0].image}/>
+            
         </div>
     )
 };
