@@ -19,8 +19,8 @@ ReactDOM.render(
         <Route path = "Calories_Tracker" element = {<CaloriesTracker />} />
         <Route path = "Recipes" element = {<Recipes />} />
         <Route path = "Forum" element = {<Forum />} />
-        <Route path = "Login" element = {<Login />} />
-        <Route path = "Register" element = {<Register />} />
+        {/* <Route path = "Login" element = {<Login />} />
+        <Route path = "Register" element = {<Register />} /> */}
       </Route>
     </Routes>
   </BrowserRouter>,

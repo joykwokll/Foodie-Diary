@@ -116,6 +116,7 @@ function CaloriesTracker() {
           onChange={changeHandler}
           onClick={clickHandler}
           onKeyDown={onKeyDownHandler}
+          placeholder={"What did you eat today?"}
         />
 
         {/* {food.map((data, index) => {
