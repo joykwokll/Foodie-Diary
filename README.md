@@ -24,16 +24,14 @@ Foodie Diary is a website for food lovers to keep track of their daily calories 
 - You may also opt to use Firebase/Firestore if you need to store data.
 
 ## Tech stack
+  - Visual Studio Code
+  - HTML & CSS
+  - Vanilla Javascript
+  - React JS
+  - Ajax (axios) for API
+  - Git & GitHub
+  - Vercel
 
-
--Visual Studio Code
--HTML
--CSS
--Vanilla Javascript
--React JS
--Ajax (axios) for API
-Git & GitHub
-Vercel
 
 ## Wireframes
 
