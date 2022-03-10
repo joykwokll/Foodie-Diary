@@ -2,7 +2,6 @@ import React from "react";
 import { findDOMNode } from "react-dom";
 
 const Result = (props) => {
-    // console.log(props)
     return (
         <div>
             <p>{props.food.name}</p>

@@ -8,7 +8,6 @@ const RecipeResult = (props) => {
         <div className = "recipeContainer">
             <p className="foodTitle">{props.results.title}</p>
             <img src={props.results.image}/>
-            
         </div>
         </div>
         

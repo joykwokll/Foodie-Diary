@@ -36,24 +36,24 @@ function CaloriesTracker() {
               sugar_g: response.data.items[0].sugar_g,
               sodium_mg: response.data.items[0].sodium_mg,
               protein_g: response.data.items[0].protein_g,
-              carbohydrates_total_g: response.data.items[0].carbohydrates_total_g,
+              carbohydrates_total_g:
+                response.data.items[0].carbohydrates_total_g,
             },
           ]);
           setTotalCalories(
             Math.ceil(totalCalories) + response.data.items[0].calories
           );
-          setTotalSugar(
-            Math.ceil(totalSugar) + response.data.items[0].sugar_g
-          );
+          setTotalSugar(Math.ceil(totalSugar) + response.data.items[0].sugar_g);
           setTotalSodium(
             Math.ceil(totalSodium) + response.data.items[0].sodium_mg
-          )
+          );
           setTotalProtein(
             Math.ceil(totalProtein) + response.data.items[0].protein_g
-          )
+          );
           setTotalCarbohydrates(
-            Math.ceil(totalCarbohydrates) + response.data.items[0].carbohydrates_total_g
-          )
+            Math.ceil(totalCarbohydrates) +
+              response.data.items[0].carbohydrates_total_g
+          );
           // console.log(response.data.items[0].calories);
           console.log(response.data.items[0]);
         } else {
@@ -71,13 +71,20 @@ function CaloriesTracker() {
     const removedFood = foodCopy.splice(index, 1);
     setFood(foodCopy);
     console.log(removedFood, "removed");
-    setTotalCalories(Math.ceil(totalCalories) - Math.ceil(removedFood[0].calories));
+    setTotalCalories(
+      Math.ceil(totalCalories) - Math.ceil(removedFood[0].calories)
+    );
     setTotalSugar(Math.ceil(totalSugar) - Math.ceil(removedFood[0].sugar_g));
-    setTotalSodium(Math.ceil(totalSodium) - Math.ceil(removedFood[0].sodium_mg));
-    setTotalProtein(Math.ceil(totalProtein) - Math.ceil(removedFood[0].protein_g));
-    setTotalCarbohydrates(Math.ceil(totalCarbohydrates) - Math.ceil(removedFood[0].carbohydrates_total_g));
-
-    
+    setTotalSodium(
+      Math.ceil(totalSodium) - Math.ceil(removedFood[0].sodium_mg)
+    );
+    setTotalProtein(
+      Math.ceil(totalProtein) - Math.ceil(removedFood[0].protein_g)
+    );
+    setTotalCarbohydrates(
+      Math.ceil(totalCarbohydrates) -
+        Math.ceil(removedFood[0].carbohydrates_total_g)
+    );
   };
 
   const clickHandler = () => {
@@ -98,8 +105,7 @@ function CaloriesTracker() {
 
   const removedFood = food.map((index) => {
     return <Result onRemove={() => removeFood(index)} />;
-  })
-
+  });
 
   return (
     <div>
@@ -121,7 +127,7 @@ function CaloriesTracker() {
         <table className="caloriesTable">
           <thead>
             <tr>
-              <th>Food Name</th>  
+              <th>Food Name</th>
               <th>Calories (kcal) </th>
               <th>Serving Size (g) </th>
               <th>Sugar (g)</th>
@@ -141,17 +147,16 @@ function CaloriesTracker() {
                 <td>{x.sodium_mg}</td>
                 <td>{x.protein_g}</td>
                 <td>{x.carbohydrates_total_g}</td>
-                <td><button className="removeButton" onClick={() => removeFood(x)}>Remove</button></td>
+                <td>
+                  <button
+                    className="removeButton"
+                    onClick={() => removeFood(x)}
+                  >
+                    Remove
+                  </button>
+                </td>
               </tr>
             ))}
-            {/* <tr>
-              <td>{food[0]?.name}</td>
-              <td>{food[0]?.calories}</td>
-            </tr>
-            <tr>
-              <td>{food[1]?.name}</td>
-              <td>{food[1]?.calories}</td>
-            </tr> */}
           </tbody>
         </table>
 
@@ -167,23 +172,15 @@ function CaloriesTracker() {
             </tr>
           </thead>
           <tbody>
-              <tr>
-                <td>{totalCalories}kcal</td>
-                <td>{totalSugar}g</td>
-                <td>{totalSodium}mg</td>
-                <td>{totalProtein}g</td>
-                <td>{totalCarbohydrates}g</td>
-              </tr>
+            <tr>
+              <td>{totalCalories}kcal</td>
+              <td>{totalSugar}g</td>
+              <td>{totalSodium}mg</td>
+              <td>{totalProtein}g</td>
+              <td>{totalCarbohydrates}g</td>
+            </tr>
           </tbody>
         </table>
-
-      
-        {/* <p>Total Calories: {totalCalories}kcal </p> 
-        <p>Total Sugar: {totalSugar}g </p> 
-        <p>Total Sodium: {totalSodium}mg </p> 
-        <p>Total Protein: {totalProtein}g </p> 
-        <p>Total Carbohydrates: {totalCarbohydrates}g </p>  */}
-
 
         {error && <p>No results found</p>}
         <style>
@@ -196,3 +193,22 @@ function CaloriesTracker() {
 }
 
 export default CaloriesTracker;
+
+{
+  /* <tr>
+              <td>{food[0]?.name}</td>
+              <td>{food[0]?.calories}</td>
+            </tr>
+            <tr>
+              <td>{food[1]?.name}</td>
+              <td>{food[1]?.calories}</td>
+            </tr> */
+}
+
+{
+  /* <p>Total Calories: {totalCalories}kcal </p> 
+        <p>Total Sugar: {totalSugar}g </p> 
+        <p>Total Sodium: {totalSodium}mg </p> 
+        <p>Total Protein: {totalProtein}g </p> 
+        <p>Total Carbohydrates: {totalCarbohydrates}g </p>  */
+}
