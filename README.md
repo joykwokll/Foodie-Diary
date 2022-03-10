@@ -5,31 +5,33 @@
 Foodie Diary is a website for food lovers to keep track of their daily calories intake. They are able to Count their calories for specific food, gain access to easy and yummy recipes as well as a public forum for them to gather and learn together.
 
 ## Project Brief
+**MVP - Minimum Viable Product** 
+- **Build a web application using create-react-app / vite or next.js**. Must be
+  your own work.
+- **Use React framework** to build your application with _at least_
+  - 3 components
+  - 4 props
+  - 2 state properties
+  - 2 setState
+  - 2 routes
+- **Use 3rd party API and/or Firestore**
+  - API call with Axios and display the data for the user. You may use any API
+    of your choosing.
+- **Craft a `README.md` file that explains your app** to the world.
+- **Create wireframes** for your app and include it in your repo/readme.
 
-MVP - Minimum Viable Product
+**Stretch Goals (Not Mandatory)**
+- You may also opt to use Firebase/Firestore if you need to store data.
 
-Build a web application using create-react-app / vite or next.js. Must be your own work.
-Use React framework to build your application with at least
-3 components
-4 props
-2 state properties
-2 setState
-2 routes
-Use 3rd party API and/or Firestore
-API call with Axios and display the data for the user. You may use any API of your choosing.
-Craft a README.md file that explains your app to the world.
-Create wireframes for your app and include it in your repo/readme.
-Stretch Goals (Not Mandatory)
-
-You may also opt to use Firebase/Firestore if you need to store data.
 ## Tech stack
 
-Visual Studio Code
-HTML
-CSS
-Vanilla Javascript
-React JS
-Ajax (axios) for API
+
+-Visual Studio Code
+-HTML
+-CSS
+-Vanilla Javascript
+-React JS
+-Ajax (axios) for API
 Git & GitHub
 Vercel
 
