@@ -10,25 +10,29 @@ function Recipes() {
   const [results, setResults] = useState([]);
 
   const callApi = () => {
-      axios
-        .get(`https://api.spoonacular.com/recipes/complexSearch?query=${keyword}&apiKey=e905888b74ab41bb88de105721948ff1`, {
-        })
-        .then(function (response) {
-            setResults([
-                {   
-                    name: keyword,
-                    image: response.data.results[0].image,
-                  },
-            ]);
-            console.log(response.data.results[0].image);
-          // handle success
-        })
-        .catch(function (error) {
-          // handle error
-          console.log(error);
-        });
-    };
-
+    axios
+      .get(
+        `https://api.spoonacular.com/recipes/complexSearch?query=${keyword}&apiKey=e905888b74ab41bb88de105721948ff1`,
+        {}
+      )
+      .then(function (response) {
+        setResults([
+          {
+            name: keyword,
+          },
+          {
+            results: response.data.results,
+          },
+        ]);
+        console.log(response.data.results);
+        console.log(response.data);
+        // handle success
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      });
+  };
 
   const clickHandler = () => {
     callApi();
@@ -57,7 +61,8 @@ function Recipes() {
         </h2>
       </div>
 
-      <Search className="searchRecipe"
+      <Search
+        className="searchRecipe"
         keyword={keyword}
         onChange={changeHandler}
         onClick={clickHandler}
@@ -65,23 +70,15 @@ function Recipes() {
         placeholder={"What are you craving for?"}
       />
 
-      {/* {results.map((result) => {
-          return <RecipeResult />
-      })}
-
-      <RecipeResult/> */}
-
-{/* {
-        results.map((data, index) => {
-          return (
-            <RecipeResult results={data}/>
-          )
-        })
-      }
- */}
-
-
-
+      <div className="recipeOverall">
+        {results && results[1] ? (
+          results[1].results.map((data, index) => {
+            return <RecipeResult results={data} />;
+          })
+        ) : (
+          <></>
+        )}
+      </div>
     </div>
   );
 }

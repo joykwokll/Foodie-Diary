@@ -1,7 +1,19 @@
+
 .recipeContainer {
+    background-color: pink;
+    position: center;
     width: 300px;
     color: black;
-    background-color: pink;
     padding: 50px;
     margin: 20px;
+    height: 270px;
   }
+
+.foodTitle {
+    font-family: 'Acme', sans-serif;
+    font-stretch: condensed;
+    top: -50px;
+    font-size: 30px;
+    position: relative;
+}
+

@@ -14,8 +14,3 @@ function Search(props) {
   
   export default Search;
   
-//   const Search = (props) => {
-//     return (
-//         <input placeholder="Search for your GIF" value={props.keyword} onChange={props.onChange}/>
-//     )
-// };

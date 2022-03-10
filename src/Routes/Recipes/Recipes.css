@@ -24,6 +24,11 @@
     /* z-index: 1; */
 }
 
+.recipeOverall {
+    display: flex;
+    width: 10px;
+}
+
 
 /* .recipeSearch {
     z-index: -5;

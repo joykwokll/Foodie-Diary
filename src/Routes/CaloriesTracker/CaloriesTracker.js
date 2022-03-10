@@ -78,7 +78,6 @@ function CaloriesTracker() {
     setTotalCarbohydrates(Math.ceil(totalCarbohydrates) - Math.ceil(removedFood[0].carbohydrates_total_g));
 
     
-    // console.log(index)
   };
 
   const clickHandler = () => {
@@ -118,12 +117,6 @@ function CaloriesTracker() {
           onKeyDown={onKeyDownHandler}
           placeholder={"What did you eat today?"}
         />
-
-        {/* {food.map((data, index) => {
-          return <Result food={data} onRemove={() => removeFood(index)} />;
-        })}
-   */}
-
 
         <table className="caloriesTable">
           <thead>

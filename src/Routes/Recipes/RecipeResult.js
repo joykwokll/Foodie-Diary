@@ -2,13 +2,16 @@ import React from "react";
 import "./RecipeResult.css";
 
 const RecipeResult = (props) => {
-    // console.log(props)
+    console.log(props)
     return (
+        <div clssName = "pinkBG">
         <div className = "recipeContainer">
-            <p>{props.results}</p>
-            <img src={props.response.data.results[0].image}/>
+            <p className="foodTitle">{props.results.title}</p>
+            <img src={props.results.image}/>
             
         </div>
+        </div>
+        
     )
 };
 
