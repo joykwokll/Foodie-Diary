@@ -12,7 +12,7 @@ function Recipes() {
   const callApi = () => {
     axios
       .get(
-        `https://api.spoonacular.com/recipes/complexSearch?query=${keyword}&apiKey=e905888b74ab41bb88de105721948ff1`,
+        `https://api.spoonacular.com/recipes/complexSearch?query=${keyword}&apiKey=e905888b74ab41bb88de105721948ff1&limit=3`,
         {}
       )
       .then(function (response) {
@@ -54,9 +54,9 @@ function Recipes() {
     <div>
       <div className="Recipesbg"></div>
       <div className="Recipes">
-        <h1>Easy and tasty recipes~</h1>
+        <h1>Easy and tasty food ideas~</h1>
         <h2>
-          Popular and easy recipes can be found here too!
+          Popular and easy recipes can be found here!
           <br /> Start eating healthy with us today~
         </h2>
       </div>
@@ -72,8 +72,8 @@ function Recipes() {
 
       <div className="recipeOverall">
         {results && results[1] ? (
-          results[1].results.map((data, index) => {
-            return <RecipeResult results={data} />;
+          results[1].results.slice(0,3).map((data, index) => {
+            return <RecipeResult results={data} /> //ask simon about difference in results
           })
         ) : (
           <></>
@@ -84,3 +84,8 @@ function Recipes() {
 }
 
 export default Recipes;
+
+
+
+
+      {/* <pre>{JSON.stringify(results, null, 2)}</pre> */}
